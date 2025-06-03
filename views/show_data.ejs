@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tasks{
+            display:flex;
+            flex-direction:row;
+        }
+        .taskinside{
+            margin:1rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Notes Making App</h1>
+        <div class="tasks">
+            <% if(rows.length > 0) {%>
+                <% rows.forEach(function(row){%>
+                    <!-- <p>There is something</p> -->
+                     <div class="taskinside">
+                        <h2><%= row.title %></h2>
+                        <p><%= row.description %></p>
+                     </div>
+                <%})%>
+            <%} else {%>
+                <p>There is nothing here</p>
+            <%}%>
+        </div>
+    </div>
+    <form action="/">
+        <button type="submit">Next Note</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tasks{
+            display:flex;
+            flex-direction:row;
+        }
+        .taskinside{
+            margin:1rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Notes Making App</h1>
+        <form action="/create" method="post" class="Input">
+            <label for="title">What is the title</label><br>
+            <input class="title" name="title"title placeholder="Write your title here"><br><br>
+
+            <label for="text">What is the text that you want to input here</label><br>
+            <textarea class="text" name="text" placeholder="Put the text of the notes here"></textarea><br>
+
+            <button type="submit">Submit</button><br>
+        </form>
+    </div>
+</body>
+</html>
